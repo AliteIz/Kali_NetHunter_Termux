@@ -45,39 +45,17 @@
    - 从 [F-Droid](https://f-droid.org/packages/com.termux) 下载
    - 从 [Github](https://github.com/termux/termux-app) 下载
 
-2. **换源**
+2. **获取脚本**
    ```bash
-   termux-change-repo
-   ```
-   获取存储权限
-   ```bash
-   termux-setup-storage
-   ```
-
-3. **更新软件源**
-   ```bash
-   pkg update
-   pkg upgrade -y
-   ```
-   
-4. **安装所需工具及依赖**
-   ```bash
-   pkg install -y x11-repo
-   
-   pkg install -y libtalloc proot x11-repo xz-utils aria2 ffplay wget curl
-   ```
-
-5. **获取脚本**
-   ```bash
-   curl -LO https://github.com/AliteIz/Kali_NetHunter_Termux/raw/master/Install_Lyz.bin
+   curl -LO https://github.com/AliteIz/Kali_NetHunter_Termux/raw/master/install.sh
    ```
    赋予运行权限
    ```bash
-   chmod +x ./Install_Lyz.bin
+   chmod +x ./install.sh
    ```
    运行脚本
    ```bash
-   bash ./Install_Lyz.bin
+   bash ./install.sh
    ```
 
 
@@ -86,9 +64,9 @@
 <details>
   <summary>怎么解决signal 9错误？</summary>
 
-> Android 12 中引入的“幽灵进程杀手”功能会限制子进程 
-> 进入“设置” > “关于手机” >连续点击“版本号” 7次，启用“开发者选项” >“禁用子进程限制”开关并将其打开
-> 如果您的设备不支持直接从开发者选项中禁用 “禁用子进程限制” 则必须通过adb连接到设备并运行以下命令：
+> Android 12 中引入的“幽灵进程杀手”功能会限制子进程  
+> 进入“设置” > “关于手机” >连续点击“版本号” 7次，启用“开发者选项” >“禁用子进程限制”开关并将其打开  
+> 如果您的设备不支持直接从开发者选项中禁用 “禁用子进程限制” 则必须通过adb连接到设备并运行以下命令：  
 
 ```
 adb shell "/system/bin/device_config set_sync_disabled_for_tests persistent"
