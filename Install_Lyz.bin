@@ -32,18 +32,20 @@ SUTIN="Lyz_ydz_"
 JSZC="Deepseek Gemini Grok"
 VERSION="1.36"
 BASE_URL="https://kali.download/nethunter-images/current/rootfs"
-VERSION_URL="https://raw.githubusercontent.com/AliteIz/Kali_NetHunter_Termux/main/ersi"
+VERSION_URL="https://v4.gh-proxy.org/https://raw.githubusercontent.com/AliteIz/Kali_NetHunter_Termux/main/ersi"
 USERNAME="kali"
 
 
 MUSIC_PID=""
 MUSIC_URLS=(
-    "https://github.com/AliteIz/Kali_NetHunter_Termux/raw/main/simc/a.mp3"
-    "https://github.com/AliteIz/Kali_NetHunter_Termux/raw/main/simc/b.mp3"
+    "https://v4.gh-proxy.org/https://github.com/AliteIz/Kali_NetHunter_Termux/raw/main/simc/a.mp3"
+    "https://v4.gh-proxy.org/https://github.com/AliteIz/Kali_NetHunter_Termux/raw/main/simc/b.mp3"
+    "https://v4.gh-proxy.org/https://github.com/AliteIz/Kali_NetHunter_Termux/raw/main/simc/c.mp3"
 )
 MUSIC_FILES=(
     "${HOME}/simc/a.mp3"
     "${HOME}/simc/b.mp3"
+    "${HOME}/simc/c.mp3"
 )
 MUSIC_STARTED="0"
 MUSIC_INDEX=0
