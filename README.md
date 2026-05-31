@@ -47,7 +47,7 @@
 
 2. **获取脚本**
    ```bash
-   curl -LO https://github.com/AliteIz/Kali_NetHunter_Termux/raw/master/install.sh
+   curl -LO https://raw.githubusercontent.com/AliteIz/Kali_NetHunter_Termux/refs/heads/main/install.sh
    ```
    赋予运行权限
    ```bash
@@ -64,9 +64,9 @@
 <details>
   <summary>怎么解决signal 9错误？</summary>
 
-> 进入“设置” > “关于手机” > 连续点击“版本号” 7次，启用“开发者选项” > “禁用子进程限制”开关并将其打开。
-
-> 如果您的设备不支持直接从开发者选项中禁用 “禁用子进程限制” 则必须通过adb连接到设备并运行以下命令：
+> Android 12 中引入的“幽灵进程杀手”功能会限制子进程  
+> 进入“设置” > “关于手机” >连续点击“版本号” 7次，启用“开发者选项” >“禁用子进程限制”开关并将其打开  
+> 如果您的设备不支持直接从开发者选项中禁用 “禁用子进程限制” 则必须通过adb连接到设备并运行以下命令：  
 
 ```
 adb shell "/system/bin/device_config set_sync_disabled_for_tests persistent"
